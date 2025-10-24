@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sample Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="firstname">First Name:</label><br />
+        <input type="text" id="firstname" name="firstname" required /><br /><br />
+
+        <label for="lastname">Last Name:</label><br />
+        <input type="text" id="lastname" name="lastname" required /><br /><br />
+
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password" required /><br /><br />
+
+        <label for="phone">Phone Number:</label><br />
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required /><br /><br />
+
+        <label for="email">Email ID:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label><br /><br />
+
+        <label for="department">Department:</label><br />
+        <select id="department" name="department" required>
+            <option value="" disabled selected>Select your department</option>
+            <option value="IT">Information Technology</option>
+            <option value="CSE">comouter Science</option>
+            <option value="CSD">Data Science</option>
+            <option value="CSM">Aeronautical </option>
+            <option value="finance">Finance</option>
+            <option value="support">Support</option>
+        </select><br /><br />
+
+        <label for="comments">Comments:</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br /><br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </form>
+</body>
+</html>
